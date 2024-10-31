@@ -29,7 +29,11 @@ if stock is not None:
   # Display company's basics
   st.write(f"# Sector : {stock.info['sector']}")
   st.write(f"# Company Beta : {stock.info['beta']}")
-  st.write(f"# Company Description : {stock.info['longBusinessSummary']}")
+  st.write(f"# Company Market Cap : {stock.info['marketCap']}")
+  st.write(f"# Company Profit Margin : {stock.info['profitMargins']}")
+  st.write(f"# Company Dividend Yield : {stock.info['dividendYield']}")
+  st.write(f"# Company Dividend Rate : {stock.info['dividendRate']}")
+  st.write(f"# Company Earnings Per Share : {stock.info['trailingEps']}")
 else:
   st.error("Failed to fetch historical data.")
 
